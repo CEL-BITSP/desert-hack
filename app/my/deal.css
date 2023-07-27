@@ -1,0 +1,118 @@
+@font-face {
+    font-family: montserrat;
+    src: url("Fonts/Montserrat-Regular.ttf");
+  }
+  
+  #Deal-div{
+    display: flex;
+    justify-content: centre;
+    flex-direction: column;
+    padding: 0 10vw;
+  }
+  body{
+    background-color: black;
+  }
+  h1{
+    display: inline;
+    color: antiquewhite;
+    white-space: nowrap;
+    margin-bottom: 0px;
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 64px;
+  }
+  h3{
+    display: block;
+    margin: 0;
+    font-family: montserrat;
+    font-size: 32px;
+    color: #D9D9D9;
+    white-space: nowrap;
+  }
+  h4#frens{
+    margin-top: 0;
+    color: antiquewhite;
+    font-size: 20px;
+    font-weight: 200;
+    font-family: montserrat;
+  }
+  #header-div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  .border{
+    border-style: solid;
+    border-radius: 7.1%;
+    border-width: 1px;
+    border-color: antiquewhite;
+    margin:1%;
+    min-width:30vw;
+    color: antiquewhite;
+    text-align: center;
+    align-items: center;
+    padding: 2% 2% 2% 2%; 
+    height: 35vh;
+    display: flex;
+    justify-content: left;
+    align-items: end;
+    min-width: 20vw;
+    text-align: left;
+    /* box-shadow: 2px 0px 2px 8px black inset; */
+  }
+  p{
+    margin-bottom: 1%;  
+    /* font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; */
+    font-family: montserrat;
+    font-size: 18px;
+    font-weight: 400;
+    /* font-weight: 700;
+    font-size: 64px; */
+    max-width: 85%;
+  }
+  #container-div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width:80vw;
+  }
+  p#header-yellow-text{
+    color: orange !important;
+    display: inline;
+    font-family: montserrat;
+    font-weight: 700;
+    font-size: 64px;
+  }
+  /* now we add background images to each div in container-div */
+  #top-left{
+    background-image: url("Images/Top-Left.png");
+    background-repeat: no-repeat;
+    flex-grow: 1.9;
+    flex-basis: 30vw;
+    background-size: cover;
+  }
+  #top-right{
+    background-image: url("Images/Top-Right.png");
+    flex-grow: 1;
+    flex-basis: 15vw;
+    background-size: cover;
+    align-items: start;
+  }
+  #bottom-left{
+    background-image: url("Images/Bottom-Left.png");
+    flex-basis: 5vw;
+    flex-grow: 1;
+    flex-basis:15vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-items: start;
+  }
+  #bottom-right{
+    background-image: url("Images/Bottom-Right.png");
+    flex-basis: 12.5vw;
+    flex-grow: 2;
+    flex-basis:30vw;
+    background-size: cover;
+  }
+  
