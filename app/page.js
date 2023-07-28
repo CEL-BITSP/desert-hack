@@ -45,49 +45,48 @@ export default function Home() {
 			</div>
 
 
-			<main className="flex min-h-screen flex-col items-center bg-black justify-between p-24">
-  <div className="flex flex-col items-center justify-center p-10">
-    <div className="flex flex-col items-center justify-center">
-      <h1 className="text-4xl font-bold text-white">
-        so, here's the <p className="text-orange-500 font-bold text-4xl inline">deal</p>!
+			<main className="flex min-h-screen flex-col items-center bg-black justify-between px-24 py-24">
+  <div className="flex w-full flex-col items-center justify-center">
+    <div className="flex flex-col items-center justify-center mb-10">
+      <h1 className="text-5xl font-bold text-white">
+        so, here's the <p className="text-orange-500 font-bold inline">deal</p>!
       </h1>
-      <h4 className="mt-0 text-white text-base font-light font-montserrat">
+      <h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-base font-light font-montserrat">
         find frens you can build with but please do something good
         find frens you can build with
       </h4>
     </div>
-    <div className="flex">
-      <div className="flex flex-col justify-start p-2 h-auto bg-auto" style={{ backgroundImage: "url('/images/Top-Left.png')"}}>
-        <h3 className="text-2xl font-montserrat text-white">Make Your Dreams irl</h3>
-        <p className="text-base font-montserrat text-white text-left">
-          find frens you can build with but please do something
+    <div className="flex w-full">
+      <div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/life.png')"}}>
+        <h3 className="text-3xl font-bold font-montserrat text-white">make Your Dreams irl</h3>
+        <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+          find frens you can build with but please do something <br></br>
           good find frens you can build with
         </p>
       </div>
-      <div className="border border-white flex flex-col justify-start p-2 ml-4 h-auto w-auto bg-auto" style={{ backgroundImage: "url('/images/Top-Right.png')"}}>
-        <h3 className="text-2xl font-montserrat text-white">Find Your Tribe</h3>
-        <p className="text-base font-montserrat text-white text-left">
-          find frens you can build with but please do something
-          good
+      <div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/tribe.png')"}}>
+	  	<h3 className="text-3xl font-bold font-montserrat text-white">find your tribe</h3>
+        <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+          find frens you can build with <br></br> but please do something
         </p>
       </div>
     </div>
-    <div className="flex mt-4">
-      <div className="border border-white flex flex-col justify-start p-2 h-auto w-auto bg-auto" style={{ backgroundImage: "url('/images/Bottom-Left.png')"}}>
-        <h3 className="text-2xl font-montserrat text-white">No Teaching</h3>
-        <p className="text-base font-montserrat text-white text-left">
-          find frens you can build with but please do something
-          good
+	<div className="flex w-full mt-4">
+	<div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/teach.png')"}}>
+	  	<h3 className="text-3xl font-bold font-montserrat text-white">no teaching</h3>
+        <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+          find frens you can build with <br></br> but please do something
         </p>
       </div>
-      <div className="border border-white flex flex-col justify-start p-2 ml-4 h-auto w-auto bg-auto" style={{ backgroundImage: "url('/images/Bottom-Right.png')"}}>
-        <h3 className="text-2xl font-montserrat text-white">Gigabrains From The Industry</h3>
-        <p className="text-base font-montserrat text-white text-left">
-          Find frens you can build with but please do something
+      <div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/brains.png')"}}>
+        <h3 className="text-3xl font-bold font-montserrat text-white">gigabrains from the industry</h3>
+        <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+          find frens you can build with but please do something <br></br>
           good find frens you can build with
         </p>
       </div>
     </div>
+
   </div>
 </main>
 
