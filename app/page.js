@@ -13,7 +13,7 @@ export default function Home() {
 	return (
 		<>
 			<div
-				className="bg-cover bg-center bg-fixed flex flex-col min-h-screen"
+				className="bg-cover bg-center flex flex-col min-h-screen"
 				style={{ backgroundImage: "url('/images/her-bg-dhack.png')" }}
 			>
 				<div className="text-center flex flex-row justify-between mt-4">
