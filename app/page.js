@@ -21,12 +21,14 @@ function getTimeRemaining() {
   );
   const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
   const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+  const milliSeconds = Math.floor(timeRemaining % (10));
 
   return {
     days,
     hours,
     minutes,
     seconds,
+	milliSeconds
   };
 }
 
@@ -37,7 +39,7 @@ export default function Home() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setCountdown(getTimeRemaining());
-    }, 1000);
+    }, 100);
 
     return () => clearTimeout(timer);
   }, [countdown]);
@@ -83,7 +85,7 @@ export default function Home() {
             <div>
               <p className=" text-xs md:text-sm font-medium text-white text-opacity-75 px-2  p-1 rounded">
                 closing in {countdown.days}d {countdown.hours}hr{" "}
-                {countdown.minutes}m {countdown.seconds}s
+                {countdown.minutes}m {countdown.seconds}s {countdown.milliSeconds}ms
               </p>
             </div>
           </div>
@@ -130,8 +132,7 @@ export default function Home() {
                 <p className="text-orange-500 font-bold inline">deal</p>!
               </h1>
               <h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-sm md:text-base font-light ">
-                find frens you can build with but please do something good find
-                frens you can build with
+			 	 we mix creativity, collaboration, and a whole lot of fun to help you bring your ideas to life!
               </h4>
             </div>
 
@@ -144,7 +145,7 @@ export default function Home() {
                   make your Dreams irl
                 </h3>
                 <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
-                  find frens you can build with but please do something
+					turn your daydreams into real-life things that you're proud of
                 </p>
               </div>
               <div
@@ -155,8 +156,7 @@ export default function Home() {
                   find your tribe
                 </h3>
                 <p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
-                  find frens you can build with <br></br> but please do
-                  something
+				  connect with your squad of <br></br>like-minded folks
                 </p>
               </div>
             </div>
@@ -168,8 +168,7 @@ export default function Home() {
               >
                 <h3 className="text-3xl font-bold  text-white">no teaching</h3>
                 <p className="text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
-                  find frens you can build with <br></br> but please do
-                  something
+				forget boring lectures, we're all <br></br> about hands-on action here
                 </p>
               </div>
               <div
@@ -180,7 +179,7 @@ export default function Home() {
                   experts for you
                 </h3>
                 <p className="text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
-                  find frens you can build with but please do something
+					learn from the top-notch people who've made it
                 </p>
               </div>
             </div>
@@ -264,8 +263,8 @@ export default function Home() {
           </div>
         </main>
 
-        <div className="bg-black flex flex-col ">
-          <div className="text-center flex flex-row justify-center md:justify-between mt-4 mb-4">
+        <div className="bg-black flex flex-col border-t-2 border-opacity-10">
+          <div className="text-center flex flex-row justify-center mt-4 mb-4">
             <div className="text-center flex flex-wrap">
               <p className="text-[rgb(255,255,255,0.75)] ml-8 mt-1">
                 {" "}
