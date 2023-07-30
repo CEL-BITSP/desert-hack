@@ -98,44 +98,44 @@ export default function Home() {
 			</div>
 
 
-			<main className="flex min-h-screen flex-col items-center bg-black justify-between px-24 py-24">
+			<main className="flex min-h-screen flex-col items-center bg-black justify-between px-8 py-12 md:px-24 md:py-24">
 				<div className="flex w-full flex-col items-center justify-center">
-					<div className="flex flex-col items-center justify-center mb-10">
-						<h1 className="text-5xl font-bold flex text-white">
-							so, here's the<p className="text-orange-500 font-bold inline">deal</p>!
+					<div className="flex flex-col items-center justify-center mb-4 md:mb-10 text-center">
+						<h1 className=" text-4xl md:text-5xl font-bold text-white">
+							so, here's the <p className="text-orange-500 font-bold inline">deal</p>!
 						</h1>
-						<h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-base font-light ">
+						<h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-sm md:text-base font-light ">
 							find frens you can build with but please do something good
 							find frens you can build with
 						</h4>
 					</div>
-					<div className="flex w-full">
-						<div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/life.png')" }}>
-							<h3 className="text-3xl font-bold  text-white">make Your Dreams irl</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
-								find frens you can build with but please do something <br></br>
-								good find frens you can build with
+
+					<div className="flex flex-col md:flex-row w-full">
+						<div className="flex w-full my-4 md:my-0 md:w-3/4 flex-col boxDiff justify-center md:justify-end text-center md:text-left px-10 py-20 md:px-7 md:pt-64 md:pb-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/life.png')" }}>
+							<h3 className="text-3xl font-bold  text-white">make your Dreams irl</h3>
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
+								find frens you can build with but please do something
 							</p>
 						</div>
-						<div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/tribe.png')" }}>
+						<div className="border w-full my-2 md:my-0 md:w-1/4 boxDiff flex flex-col justify-center md:justify-start text-center md:text-left px-10 py-20 md:pb-64 md:px-7 md:pt-7 md:ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/tribe.png')" }}>
 							<h3 className="text-3xl font-bold  text-white">find your tribe</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
 								find frens you can build with <br></br> but please do something
 							</p>
 						</div>
 					</div>
-					<div className="flex w-full mt-4">
-						<div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/teach.png')" }}>
+
+					<div className="flex flex-col md:flex-row w-full md:mt-4">
+						<div className="border w-full my-2 md:my-0 md:w-1/4 boxDiff flex flex-col justify-center md:justify-start text-center md:text-left  px-10 py-20 md:pb-64 md:px-7 md:pt-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/teach.png')" }}>
 							<h3 className="text-3xl font-bold  text-white">no teaching</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
+							<p className="text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
 								find frens you can build with <br></br> but please do something
 							</p>
 						</div>
-						<div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/brains.png')" }}>
-							<h3 className="text-3xl font-bold  text-white">gigabrains from the industry</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
-								find frens you can build with but please do something <br></br>
-								good find frens you can build with
+						<div className="flex w-full my-2 md:my-0 md:w-3/4 flex-col boxDiff justify-center md:justify-end text-center md:text-left  px-10 py-20 md:px-7 md:pt-64 md:pb-7 md:ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/brains.png')" }}>
+							<h3 className="text-3xl font-bold  text-white">experts for you</h3>
+							<p className="text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal">
+								find frens you can build with but please do something
 							</p>
 						</div>
 					</div>
@@ -149,7 +149,7 @@ export default function Home() {
 				style={{ backgroundImage: `url(${bg.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 			>
 				<div className="flex min-h-full flex-col items-center justify-start p-0 md:p-24 text-[1rem]">
-					<div className="text-2xl md:text-5xl font-bold text-center">
+					<div className="text-3xl md:text-5xl font-bold text-center mb-4 md:mb-0">
 						we won't lie about <br></br>
 						having no <span className="text-[#FA8D2A]">pre-requisites</span>
 					</div>
