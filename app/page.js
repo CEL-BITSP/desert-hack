@@ -145,22 +145,22 @@ export default function Home() {
 
 
 			<main
-				className="px-12 text-white min-h-[50vh]"
-				style={{ backgroundImage: `url(${bg.src})`, backgroundSize: 'contain' }}
+				className="px-6 py-6 md:py-0 md:px-12 text-white min-h-[50vh]"
+				style={{ backgroundImage: `url(${bg.src})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat' }}
 			>
-				<div className="flex min-h-full flex-col items-center justify-start p-24 text-[1rem]">
+				<div className="flex min-h-full flex-col items-center justify-start p-0 md:p-24 text-[1rem]">
 					<div className="text-2xl md:text-5xl font-bold text-center">
 						we won't lie about <br></br>
 						having no <span className="text-[#FA8D2A]">pre-requisites</span>
 					</div>
 
-					<div className="flex gap-20 items-center justify-start my-16 font-bold">
+					<div className="flex-col md:flex md:flex-row gap-20 items-center justify-start my-4 md:my-16 font-bold">
 						<div className="w-100 bg-black boxDiff">
-							<h2 className="py-6 px-24 font-bold text-lg">
+							<h2 className="py-6 px-6 md:px-24 font-bold text-lg text-center">
 								you'll be an oddball if you're 🤞
 							</h2>
 							<hr className="divider"></hr>
-							<div className=" flex flex-col gap-4 py-6 px-12 text-[rgb(255,255,255,0.75)] font-normal">
+							<div className=" flex flex-col gap-4 py-6 px-6 md:px-12 text-[rgb(255,255,255,0.75)] font-normal text-sm md:text-base">
 								<div className="flex justify-start  items-center">
 									{" "}
 									{crossIcon}
@@ -169,7 +169,7 @@ export default function Home() {
 								<div className="flex justify-start  items-center">
 									{" "}
 									{crossIcon}
-									<p className="ml-4">expecting yet another course to add to your CV</p>
+									<p className="ml-4">expecting yet another course for CV</p>
 								</div>
 								<div className="flex justify-start  items-center">
 									{" "}
@@ -179,16 +179,16 @@ export default function Home() {
 								<div className="flex justify-start  items-center">
 									{" "}
 									{crossIcon}
-									<p className="ml-4">looking to get a certificate at the end of this</p>
+									<p className="ml-4">looking to get a certificate</p>
 								</div>
 							</div>
 						</div>
-						<div className="w-100 bg-black boxDiff">
-							<h2 className="py-6 px-24 font-bold text-lg">
-								you’ll hustle your way in if you’re 🔥
+						<div className="w-100 bg-black boxDiff mt-6 md:mt-0">
+							<h2 className="py-6 px-6 md:px-24 text-center font-bold text-lg">
+								you'll make it if you're 🔥 
 							</h2>
 							<hr className="divider"></hr>
-							<div className=" flex flex-col gap-4 py-6 px-12 text-[rgb(255,255,255,0.75)] font-normal">
+							<div className=" flex flex-col gap-4 py-6 px-6 md:px-12 text-[rgb(255,255,255,0.75)] font-normal text-sm md:text-base">
 								<div className="flex justify-start  items-center">
 									{" "}
 									{tickIcon}
@@ -197,7 +197,7 @@ export default function Home() {
 								<div className="flex justify-start  items-center">
 									{" "}
 									{tickIcon}
-									<p className="ml-4">looking for someone to heavy lift your ideas w/ you</p>
+									<p className="ml-4">seeking a partner to uplift your ideas w you.</p>
 								</div>
 								<div className="flex justify-start  items-center">
 									{" "}
@@ -218,7 +218,7 @@ export default function Home() {
 			<div
 				className="bg-black flex flex-col "
 			>
-				<div className="text-center flex flex-row justify-between mt-4 mb-4">
+				<div className="text-center flex flex-row justify-center md:justify-between mt-4 mb-4">
 					<div className="text-center flex flex-wrap">
 						<p className="text-[rgb(255,255,255,0.75)] ml-8 mt-1" > an initiative by&nbsp;&nbsp;</p>
 						<img src="/images/cel-logo.png" className="h-8" />
