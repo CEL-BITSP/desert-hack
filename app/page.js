@@ -30,14 +30,7 @@ function getTimeRemaining() {
   }
 
 export default function Home() {
-
-	const handleButton1Click = () => {
-		window.location.href = 'https://www.notion.so/sxmawl/Website-copy-999fa4b7e02b4d0399db034b5326a4b3?pvs=4';
-	  };
-	const handleButton2Click = () => {
-		window.location.href = 'https://www.notion.so/sxmawl/Website-copy-999fa4b7e02b4d0399db034b5326a4b3?pvs=4';
-	  };
-
+	const [hydrated, setHydrated] = React.useState(false);
 	const [countdown, setCountdown] = useState(getTimeRemaining());
 
 	useEffect(() => {
@@ -46,10 +39,30 @@ export default function Home() {
 		}, 1000);
 	
 		return () => clearTimeout(timer);
-	  });
+	},[countdown]);
 
+	
+    useEffect(() => {
+        setHydrated(true);
+    }, []);
+
+    if (!hydrated) {
+        // Returns null on first render, so the client and server match
+        return null;
+    }
+
+	const handleButton1Click = () => {
+		window.location.href = 'https://airtable.com/appBG2GA6I0I10YGQ/shrabkWrnUOOGhHjO';
+	  };
+	const handleButton2Click = () => {
+		window.location.href = 'https://sxmawl.notion.site/here-s-our-2-cents-83f18ae05d0040a4aeeeb11f10bfc850?pvs=4';
+	  };
+
+	
+
+	
 	return (
-		<div className="font-montserrat">
+		<div className="">
 		<>
 			<div
 				className="bg-cover bg-center flex flex-col min-h-screen"
@@ -57,7 +70,7 @@ export default function Home() {
 			>
 				<div className="text-center flex flex-row justify-between mt-4">
 					<div className="text-center flex flex-wrap">
-						<p className="text-2xl font-extrabold text-white ml-8" > 🏜 desert hack </p>
+						<p className="flex gap-2 items-center justify-center text-2xl font-extrabold text-white ml-8 mb-1" ><img src="/images/dh-emoji.png" className="h-8" /> desert hack </p>
 						<p className="text-2xl font-extrabold text-orange-500" > . </p>
 					</div>
 					<div>
@@ -78,7 +91,7 @@ export default function Home() {
 					<p className="text-xl font-normal text-white text-opacity-75 mb-10">#DreamsToDemos | 27th aug - 30th sept</p>
 					<div className="justify-center flex flex-row">
 						<button onClick={handleButton1Click} className="px-6 py-4 mr-6 font-semibold text-black bg-white rounded-md ">bet on yourself 🏜 </button>
-						<button onClick={handleButton2Click} className="px-6 py-3 font-semibold text-white boxDiff ">what is this about?</button>
+						<button onClick={handleButton2Click} className="px-6 py-3 font-semibold text-white wtf ">what is this about?</button>
 					</div>
 				</div>
 			</div>
@@ -90,36 +103,36 @@ export default function Home() {
 						<h1 className="text-5xl font-bold text-white">
 							so, here's the <p className="text-orange-500 font-bold inline">deal</p>!
 						</h1>
-						<h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-base font-light font-montserrat">
+						<h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-base font-light ">
 							find frens you can build with but please do something good
 							find frens you can build with
 						</h4>
 					</div>
 					<div className="flex w-full">
 						<div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/life.png')" }}>
-							<h3 className="text-3xl font-bold font-montserrat text-white">make Your Dreams irl</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+							<h3 className="text-3xl font-bold  text-white">make Your Dreams irl</h3>
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
 								find frens you can build with but please do something <br></br>
 								good find frens you can build with
 							</p>
 						</div>
 						<div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/tribe.png')" }}>
-							<h3 className="text-3xl font-bold font-montserrat text-white">find your tribe</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+							<h3 className="text-3xl font-bold  text-white">find your tribe</h3>
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
 								find frens you can build with <br></br> but please do something
 							</p>
 						</div>
 					</div>
 					<div className="flex w-full mt-4">
 						<div className="border w-1/4 boxDiff flex flex-col justify-start pb-64 px-7 pt-7 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/teach.png')" }}>
-							<h3 className="text-3xl font-bold font-montserrat text-white">no teaching</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+							<h3 className="text-3xl font-bold  text-white">no teaching</h3>
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
 								find frens you can build with <br></br> but please do something
 							</p>
 						</div>
 						<div className="flex w-3/4 flex-col boxDiff justify-start px-7 pt-64 pb-7 ml-4 h-auto bg-no-repeat bg-cover" style={{ backgroundImage: "url('/images/brains.png')" }}>
-							<h3 className="text-3xl font-bold font-montserrat text-white">gigabrains from the industry</h3>
-							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal font-montserrat text-left">
+							<h3 className="text-3xl font-bold  text-white">gigabrains from the industry</h3>
+							<p className=" text-sm mt-2 text-[rgb(255,255,255,0.75)] font-normal  text-left">
 								find frens you can build with but please do something <br></br>
 								good find frens you can build with
 							</p>
@@ -206,7 +219,7 @@ export default function Home() {
 			>
 				<div className="text-center flex flex-row justify-between mt-4 mb-4">
 					<div className="text-center flex flex-wrap">
-						<p className="text-white ml-8 mt-1" > an initiative by&nbsp;&nbsp;</p>
+						<p className="text-[rgb(255,255,255,0.75)] ml-8 mt-1" > an initiative by&nbsp;&nbsp;</p>
 						<img src="/images/cel-logo.png" className="h-8" />
 					</div>
 					<div>
