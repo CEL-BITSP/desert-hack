@@ -5,6 +5,7 @@ import { RxCrossCircled } from "react-icons/rx";
 import { BsCheckCircle } from 'react-icons/bs'
 import "./page.css";
 import React, { useState, useEffect } from "react";
+import Head from 'next/head';
 
 
 const crossIcon = <RxCrossCircled />;
@@ -59,16 +60,17 @@ export default function Home() {
 	  };
 
 	
-
-	
-	return (
+	  return (
 		<div className="">
 		<>
+			<Head>
+		    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		    </Head>
 			<div
 				className="bg-cover bg-center flex flex-col min-h-screen"
 				style={{ backgroundImage: "url('/images/her-bg-dhack.png')" }}
 			>
-				<div className="text-center flex flex-row justify-between mt-4">
+				<div className="text-center flex flex-col md:flex-row justify-between mt-4">
 					<div className="text-center flex flex-wrap">
 						<p className="flex gap-2 items-center justify-center text-2xl font-extrabold text-white ml-8 mb-1" ><img src="/images/dh-emoji.png" className="h-8" /> desert hack </p>
 						<p className="text-2xl font-extrabold text-orange-500" > . </p>
@@ -82,16 +84,16 @@ export default function Home() {
 					<div>
 						<p className="font-normal text-white text-opacity-75 mb-4 mt-10 px-5 boxDiff p-2 rounded-full" >Center for Entrepreneurial Leadership</p>
 					</div>
-					<div className="text-center whitespace-normal flex flex-wrap">
-						<p className="text-6xl font-extrabold text-white mb-2">work on</p>
-						<p className="text-6xl font-extrabold text-orange-500 mb-2 ">&nbsp;anything&nbsp;</p>
-						<p className="text-6xl font-extrabold text-white mb-4">you want </p>
+					<div className="whitespace-normal md:flex flex-row text-center flex-wrap">
+    					<p className="text-4xl md:text-6xl font-extrabold text-white mb-2">work on</p>
+						<p className="text-4xl md:text-6xl font-extrabold text-orange-500 mb-2 ">&nbsp;anything&nbsp;</p>
+						<p className="text-4xl md:text-6xl font-extrabold text-white mb-4">you want </p>
 					</div>
-					<p className="text-6xl font-extrabold text-white mb-4">for the next few weeks</p>
-					<p className="text-xl font-normal text-white text-opacity-75 mb-10">#DreamsToDemos | 27th aug - 30th sept</p>
-					<div className="justify-center flex flex-row">
-						<button onClick={handleButton1Click} className="px-6 py-4 mr-6 font-semibold text-black bg-white rounded-md ">bet on yourself 🏜 </button>
-						<button onClick={handleButton2Click} className="px-6 py-3 font-semibold text-white wtf ">what is this about?</button>
+					<p className="text-4xl md:text-6xl text-center font-extrabold text-white mb-4">for the next few weeks</p>
+					<p className="text-xl font-normal text-center flex-col text-white text-opacity-75 mb-10">#DreamsToDemos | 27th aug - 30th sept</p>
+					<div className="justify-center flex flex-col items-center md:flex-row">
+						<button onClick={handleButton1Click} className="w-full md:w-auto mb-4 md:mb-0 md:mr-4 px-6 py-4 font-semibold text-black bg-white rounded-md ">bet on yourself 🏜 </button>
+						<button onClick={handleButton2Click} className="w-full md:w-auto px-6 py-4 font-semibold text-white wtf ">what is this about?</button>
 					</div>
 				</div>
 			</div>
@@ -100,8 +102,8 @@ export default function Home() {
 			<main className="flex min-h-screen flex-col items-center bg-black justify-between px-24 py-24">
 				<div className="flex w-full flex-col items-center justify-center">
 					<div className="flex flex-col items-center justify-center mb-10">
-						<h1 className="text-5xl font-bold text-white">
-							so, here's the <p className="text-orange-500 font-bold inline">deal</p>!
+						<h1 className="text-5xl font-bold flex text-white">
+							so, here's the<p className="text-orange-500 font-bold inline">deal</p>!
 						</h1>
 						<h4 className="mt-4 text-[rgb(255,255,255,0.75)] text-base font-light ">
 							find frens you can build with but please do something good
