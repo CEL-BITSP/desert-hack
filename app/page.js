@@ -1,6 +1,5 @@
 "use client";
-import Link from "next/link";
-import bg from "public/pre-req.png";
+import bg from "public/images/pre-req.png";
 import { RxCrossCircled } from "react-icons/rx";
 import { BsCheckCircle } from 'react-icons/bs'
 import "./page.css";
@@ -206,7 +205,7 @@ export default function Home() {
 								<div className="flex justify-start  items-center">
 									{" "}
 									{tickIcon}
-									<p className="ml-4">a trustworthy partner fr fra trustworthy partner fr fr</p>
+									<p className="ml-4">a trustworthy partner fr fr</p>
 								</div>
 							</div>
 						</div>
