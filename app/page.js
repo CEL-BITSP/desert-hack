@@ -61,7 +61,7 @@ export default function Home() {
 						<p className="text-2xl font-extrabold text-orange-500" > . </p>
 					</div>
 					<div>
-						<p className="text-sm font-normal text-white text-opacity-75 mr-8 px-2  p-1 rounded" >closing in {countdown.days}d {countdown.hours}hr {countdown.minutes}m {countdown.seconds}s</p>
+						<p className="text-sm font-medium text-white text-opacity-75 mr-8 px-2  p-1 rounded" >closing in {countdown.days}d {countdown.hours}hr {countdown.minutes}m {countdown.seconds}s</p>
 					</div>
 				</div>
 				<div className=" border-t border-white mb-4 mt-2"></div>
@@ -142,11 +142,11 @@ export default function Home() {
 
 					<div className="flex gap-20 items-center justify-start my-16 font-bold">
 						<div className="w-100 bg-black boxDiff">
-							<h2 className="py-6 px-28 font-bold text-lg">
+							<h2 className="py-6 px-24 font-bold text-lg">
 								you'll be an oddball if you're 🤞
 							</h2>
 							<hr className="divider"></hr>
-							<div className=" flex flex-col gap-4 py-6 px-20 text-[rgb(255,255,255,0.75)] font-normal">
+							<div className=" flex flex-col gap-4 py-6 px-12 text-[rgb(255,255,255,0.75)] font-normal">
 								<div className="flex justify-start  items-center">
 									{" "}
 									{crossIcon}
@@ -170,11 +170,11 @@ export default function Home() {
 							</div>
 						</div>
 						<div className="w-100 bg-black boxDiff">
-							<h2 className="py-6 px-28 font-bold text-lg">
+							<h2 className="py-6 px-24 font-bold text-lg">
 								you’ll hustle your way in if you’re 🔥
 							</h2>
 							<hr className="divider"></hr>
-							<div className=" flex flex-col gap-4 py-6 px-20 text-[rgb(255,255,255,0.75)] font-normal">
+							<div className=" flex flex-col gap-4 py-6 px-12 text-[rgb(255,255,255,0.75)] font-normal">
 								<div className="flex justify-start  items-center">
 									{" "}
 									{tickIcon}
